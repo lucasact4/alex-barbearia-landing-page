@@ -173,13 +173,13 @@
 }
 
 .landing-page_header-main-info a {
-    background-color: #CBA009;
-    border: 2px solid #CBA009;
+    background-color: #FFE200;
+    border: 2px solid #FFE200;
     font-weight: bold;
 }
 
 .landing-page_header-main-info a:hover {
-    border: 2px solid white;
+    border: 2px solid #FFE200;
 }
 
 .landing-page_header-main-info a .bi::before {
