@@ -10,6 +10,10 @@
     list-style: none;
 }
 
+.landing-page_general-shadow {
+    box-shadow: 0 -10px 10px -5px #0006, 0 0 10px #0006;
+}
+
 /* Fonts */
 .font-montserrat-700 {
     font-family: "Montserrat", sans-serif;
@@ -135,7 +139,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 128px;
 }
 
 .landing-page_header-main-img {
@@ -187,4 +191,62 @@
     margin-top: 4px;
 }
 
-/* Header & Main Styles */
+/* Main Styles */
+
+.landing-page_main-about-us {
+}
+
+.landing-page_main-about-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.landing-page_main-about-us-title {
+    position: relative;
+    font-size: 48px;
+    left: -50px;
+    top: -25px;
+}
+
+.landing-page_main-about-us-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 0px;
+    bottom: 5px;
+    height: 3px;
+    background-color: #CBA009;
+}
+
+.landing-page_main-about-us-img {
+    background-image: url(images/barber-img-main-about-us.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: 250px;
+    border-radius: 2px;
+    top: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.landing-page_main-about-us-text {
+    position: relative;
+    z-index: 1;
+    width: 800px;
+    height: 300px;
+    border-radius: 2px;
+    background-color: #FFE200;
+    margin-left: -50px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.landing-page_main-about-us-text p {
+    padding: 10px 10px 10px 100px;
+    color: black;
+}
+
+/* Footer Styles */
