@@ -39,7 +39,7 @@
     margin: 0 auto;
     max-width: 1680px;
     .landing-page_header-background {
-        background-image: url(/images/background-barber-example.jpeg);
+        background-image: url(../images/background-barber-example.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         justify-content: center;
@@ -131,7 +131,7 @@
         padding-top: 64px;
         padding-bottom: 128px;
         .landing-page_header-main-img {
-            background-image: url(/images/barber-img-header-main.webp);
+            background-image: url(../images/barber-img-header-main.webp);
             background-size: cover;
             position: relative;
             z-index: 2;
@@ -189,7 +189,7 @@
             padding-top: 64px;
             padding-bottom: 64px;
             .landing-page_main-about-us-img {
-                background-image: url(/images/barber-img-main-about-us.jpg);
+                background-image: url(../images/barber-img-main-about-us.jpg);
                 background-size: cover;
                 position: relative;
                 z-index: 2;
@@ -234,7 +234,7 @@
 
 /* Main Service Schedule */
 .landing-page_main-service_schedule {
-    background-image: url(/images/background-second-barber-example.jpg);
+    background-image: url(../images/background-second-barber-example.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
