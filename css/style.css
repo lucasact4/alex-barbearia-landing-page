@@ -329,6 +329,32 @@
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+.landing-page_main-contact-us .contact-us-content {
+  background-color: #FEAD0F;
+}
+.landing-page_main-contact-us .contact-us-content .contact-us-box {
+  width: 350px;
+  padding: 20px;
+  background-color: #181818;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.landing-page_main-contact-us .contact-us-content .contact-us-box .contact-us-box-content .form-control {
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.landing-page_main-contact-us .contact-us-content .contact-us-box .contact-us-box-content .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.landing-page_main-contact-us .contact-us-content .contact-us-box .contact-us-box-content .contact-us-bnt-submit input {
+  width: 100%;
+  margin: 10px 0;
+  background-color: #FFFFFF;
+  color: #181818;
+  font-weight: bold;
+}
+
+/* Main Contact Us */
 /* Footer Styles */
 
 /*# sourceMappingURL=style.css.map */
