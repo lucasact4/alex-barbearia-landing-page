@@ -13,6 +13,19 @@
   box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+.nav-social a {
+  display: inline-block;
+  background-color: #FFE200;
+  color: black;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: transform 200ms ease;
+  width: 30px;
+  height: 30px;
+}
+.nav-social a:hover {
+  transform: scale(1.1);
+}
+
 /* Fonts */
 .font-montserrat-700 {
   font-family: "Montserrat", sans-serif;
@@ -80,18 +93,6 @@
 .landing-page_width-limit .landing-page_header-background .landing-page_header-shadow .landing-page_header-nav .landing-page_header-nav-menu a:hover::after {
   width: 100%;
   left: 0;
-}
-.landing-page_width-limit .landing-page_header-background .landing-page_header-shadow .landing-page_header-nav .landing-page_header-nav-social a {
-  display: inline-block;
-  background-color: #FFE200;
-  color: black;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  transition: transform 200ms ease;
-  width: 30px;
-  height: 30px;
-}
-.landing-page_width-limit .landing-page_header-background .landing-page_header-shadow .landing-page_header-nav .landing-page_header-nav-social a:hover {
-  transform: scale(1.1);
 }
 
 /* Header & Main Styles */
@@ -231,17 +232,11 @@
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content {
   padding: 5rem 0 7rem 0;
 }
-.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service {
-  padding: 0 9rem;
-}
-.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service img {
-  width: 75px;
-}
-.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .landing-page_main-service-title {
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service-schedule-title {
   position: relative;
   padding: 0px 20px;
 }
-.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .landing-page_main-service-title::after {
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service-schedule-title::after {
   content: "";
   position: absolute;
   width: 80%;
@@ -250,6 +245,30 @@
   bottom: 2px;
   height: 3px;
   background-color: #CBA009;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service {
+  padding: 0 3rem;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-img i {
+  font-size: 40px;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-img i::before {
+  display: flex;
+  justify-content: center;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-img img {
+  width: 40px;
+  height: 40px;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service img {
+  width: 40px;
 }
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service {
   background-color: rgba(0, 0, 0, 0.3);
@@ -261,12 +280,53 @@
   justify-content: center;
   align-items: center;
 }
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service p {
+  color: #CBA009;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule {
+  padding: 0 0rem;
+}
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule {
   background-color: #FFFFFF;
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 500px;
   border-radius: 10px;
   margin-top: 20px;
+}
+
+/* Main Our Team */
+.landing-page_main-our-team .our-team-content {
+  padding: 4rem 0;
+}
+.landing-page_main-our-team .our-team-content .our-team-title {
+  position: relative;
+  padding: 0px 20px;
+}
+.landing-page_main-our-team .our-team-content .our-team-title::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  bottom: 2px;
+  height: 3px;
+  background-color: #CBA009;
+}
+.landing-page_main-our-team .our-team-content .our-team-peoples {
+  padding: 2rem 0;
+}
+.landing-page_main-our-team .our-team-content .our-team-peoples .our-team-people .our-team-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.landing-page_main-our-team .our-team-content .our-team-peoples .our-team-people .our-team-img img {
+  border-radius: 50%;
+  width: 130px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 /* Footer Styles */
