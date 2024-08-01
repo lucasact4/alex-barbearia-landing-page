@@ -26,6 +26,10 @@
   transform: scale(1.1);
 }
 
+.bg-dark-two {
+  background-color: #181818;
+}
+
 /* Fonts */
 .font-montserrat-700 {
   font-family: "Montserrat", sans-serif;
@@ -329,6 +333,7 @@
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+/* Main Contact Us */
 .landing-page_main-contact-us .contact-us-content {
   background-color: #FEAD0F;
 }
@@ -354,7 +359,10 @@
   font-weight: bold;
 }
 
-/* Main Contact Us */
 /* Footer Styles */
+.landing-page_footer .footer-img {
+  width: 150px;
+  margin-right: -20px;
+}
 
 /*# sourceMappingURL=style.css.map */
