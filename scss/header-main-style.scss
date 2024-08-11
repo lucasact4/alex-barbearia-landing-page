@@ -28,16 +28,27 @@
         align-items: center;
         padding-top: 64px;
         padding-bottom: 128px;
-        .landing-page_header-main-img {
-            background-image: url(../images/barber-img-header-main.webp);
-            background-size: cover;
-            position: relative;
+        .landing-page_header-main-img-frame {
             z-index: 2;
-            width: 550px;
-            height: 366px;
+            width: 556px;
+            height: 372px;
             border: 3px solid #CBA009;
             border-radius: 5px;
             margin-right: -50px;
+            overflow: hidden;
+            .landing-page_header-main-img {
+                background-image: url(../images/barber-img-header-main.webp);
+                background-size: cover;
+                position: relative;
+                width: 550px;
+                height: 366px;
+                border-radius: 5px;
+                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: inset 0px 0px 100px 180px rgba(0,0,0,0.1);
+                }
+            }
         }
         .landing-page_header-main-info {
             position: relative;
