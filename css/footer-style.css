@@ -3,5 +3,11 @@
   width: 150px;
   margin-right: -20px;
 }
+.landing-page_footer .footer-rights {
+  color: rgba(24, 24, 24, 0.6);
+  font-weight: bold;
+  background-color: #FEAD0F;
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=footer-style.css.map */

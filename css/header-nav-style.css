@@ -15,6 +15,11 @@
 .landing-page_header-background .landing-page_header-shadow .landing-page_header-nav .landing-page_header-nav-img {
   height: 100px;
   filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.landing-page_header-background .landing-page_header-shadow .landing-page_header-nav .landing-page_header-nav-img:hover {
+  transform: scale(1.2);
 }
 .landing-page_header-background .landing-page_header-shadow .landing-page_header-nav .landing-page_header-nav-menu a {
   color: white;

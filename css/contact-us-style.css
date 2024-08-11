@@ -1,22 +1,56 @@
 /* Main Contact Us */
-.landing-page_main-contact-us .contact-us-content {
-  background-color: #FEAD0F;
+.landing-page_main-contact-us .contact-us-svg-separator {
+  position: relative;
 }
-.landing-page_main-contact-us .contact-us-content .contact-us-box {
+.landing-page_main-contact-us .contact-us-svg-separator::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  bottom: -60px;
+  height: 4rem;
+  background-image: linear-gradient(to top, rgba(254, 174, 15, 0) 0%, rgb(254, 174, 15) 100%);
+}
+.landing-page_main-contact-us .contact-us-background {
+  background-image: url(../images/background-barber-example.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page_main-contact-us .contact-us-background .contact-us-content {
+  background-color: rgba(254, 174, 15, 0.92);
+}
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-title {
+  position: relative;
+  color: #181818;
+}
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-title::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  bottom: 2px;
+  height: 3px;
+  background-color: #181818;
+}
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box {
   width: 350px;
   padding: 20px;
   background-color: #181818;
   border-radius: 10px;
   margin: 20px 0;
 }
-.landing-page_main-contact-us .contact-us-content .contact-us-box .contact-us-box-content .form-control {
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .form-control {
   margin-bottom: 10px;
   background-color: transparent;
 }
-.landing-page_main-contact-us .contact-us-content .contact-us-box .contact-us-box-content .form-control::placeholder {
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .form-control::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-.landing-page_main-contact-us .contact-us-content .contact-us-box .contact-us-box-content .contact-us-bnt-submit input {
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .contact-us-bnt-submit input {
   width: 100%;
   margin: 10px 0;
   background-color: #FFFFFF;

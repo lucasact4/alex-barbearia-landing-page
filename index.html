@@ -14,18 +14,21 @@
 </head>
 <body class="text-white bg-dark">
     <div class="landing-page_width-limit landing-page_general-shadow">
-        <header class="landing-page_header-background">
+        <header class="landing-page_header-background" id="home">
             <div class="landing-page_header-shadow">
                 <div class="container">
                     <nav class="landing-page_header-nav d-flex justify-content-around align-items-center">
                         <span>
-                            <img class="landing-page_header-nav-img" src="images/logo.png" alt="Alex Barbearia Logo">
+                            <a href="#home">
+                                <img class="landing-page_header-nav-img" src="images/logo.png" alt="Alex Barbearia Logo">
+                            </a>
                         </span>
                         <span class="font-montserrat-700 landing-page_header-nav-menu">
-                            <a href="">Home</a>
-                            <a href="">Sobre Nós</a>
-                            <a href="">Serviços</a>
-                            <a href="">Contato</a>
+                            <a href="#home">Home</a>
+                            <a href="#about-us">Sobre Nós</a>
+                            <a href="#service">Serviços</a>
+                            <a href="#our-team">Equipe</a>
+                            <a href="#contact">Contato</a>
                         </span>
                         <span class="nav-social d-flex">
                             <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-facebook"></i></a>
@@ -54,7 +57,7 @@
             </div>
         </header>
         <main class="landing-page_main">
-            <div class="landing-page_main-about-us bg-dark-two">
+            <div class="landing-page_main-about-us bg-dark-two" id="about-us">
                 <div class="container">
                     <div class="landing-page_main-about-us-content">
                         <div class="landing-page_main-about-us-img">
@@ -68,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="landing-page_main-service_schedule bg-dark-two">
+            <div class="landing-page_main-service_schedule bg-dark-two" id="service">
                 <div class="landing-page_main-service_schedule_shadow">
                     <div class="container">
                         <div class="row service_schedule-content">
@@ -149,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="landing-page_main-our-team bg-dark-two">
+            <div class="landing-page_main-our-team bg-dark-two" id="our-team">
                 <div class="container">
                     <div class="our-team-content">
                         <h2 class="text-center font-bebas-neue-400">
@@ -216,30 +219,32 @@
                     </div>
                 </div>
             </div>
-            <div class="landing-page_main-contact-us bg-dark-two">
+            <div class="landing-page_main-contact-us bg-dark-two" id="contact">
                 <div class="contact-us-svg-separator">
                     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,63L17.1,73.5C34.3,84,69,105,103,115.5C137.1,126,171,126,206,122.5C240,119,274,112,309,122.5C342.9,133,377,161,411,150.5C445.7,140,480,91,514,59.5C548.6,28,583,14,617,21C651.4,28,686,56,720,56C754.3,56,789,28,823,45.5C857.1,63,891,126,926,136.5C960,147,994,105,1029,91C1062.9,77,1097,91,1131,84C1165.7,77,1200,49,1234,52.5C1268.6,56,1303,91,1337,87.5C1371.4,84,1406,42,1440,42C1474.3,42,1509,84,1543,105C1577.1,126,1611,126,1646,122.5C1680,119,1714,112,1749,94.5C1782.9,77,1817,49,1851,38.5C1885.7,28,1920,35,1954,31.5C1988.6,28,2023,14,2057,35C2091.4,56,2126,112,2160,115.5C2194.3,119,2229,70,2263,63C2297.1,56,2331,91,2366,101.5C2400,112,2434,98,2451,91L2468.6,84L2468.6,210L2451.4,210C2434.3,210,2400,210,2366,210C2331.4,210,2297,210,2263,210C2228.6,210,2194,210,2160,210C2125.7,210,2091,210,2057,210C2022.9,210,1989,210,1954,210C1920,210,1886,210,1851,210C1817.1,210,1783,210,1749,210C1714.3,210,1680,210,1646,210C1611.4,210,1577,210,1543,210C1508.6,210,1474,210,1440,210C1405.7,210,1371,210,1337,210C1302.9,210,1269,210,1234,210C1200,210,1166,210,1131,210C1097.1,210,1063,210,1029,210C994.3,210,960,210,926,210C891.4,210,857,210,823,210C788.6,210,754,210,720,210C685.7,210,651,210,617,210C582.9,210,549,210,514,210C480,210,446,210,411,210C377.1,210,343,210,309,210C274.3,210,240,210,206,210C171.4,210,137,210,103,210C68.6,210,34,210,17,210L0,210Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 179, 11, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,105L17.1,91C34.3,77,69,49,103,52.5C137.1,56,171,91,206,98C240,105,274,84,309,66.5C342.9,49,377,35,411,38.5C445.7,42,480,63,514,63C548.6,63,583,42,617,31.5C651.4,21,686,21,720,21C754.3,21,789,21,823,38.5C857.1,56,891,91,926,101.5C960,112,994,98,1029,98C1062.9,98,1097,112,1131,122.5C1165.7,133,1200,140,1234,140C1268.6,140,1303,133,1337,129.5C1371.4,126,1406,126,1440,112C1474.3,98,1509,70,1543,70C1577.1,70,1611,98,1646,108.5C1680,119,1714,112,1749,98C1782.9,84,1817,63,1851,59.5C1885.7,56,1920,70,1954,77C1988.6,84,2023,84,2057,94.5C2091.4,105,2126,126,2160,126C2194.3,126,2229,105,2263,84C2297.1,63,2331,42,2366,42C2400,42,2434,63,2451,73.5L2468.6,84L2468.6,210L2451.4,210C2434.3,210,2400,210,2366,210C2331.4,210,2297,210,2263,210C2228.6,210,2194,210,2160,210C2125.7,210,2091,210,2057,210C2022.9,210,1989,210,1954,210C1920,210,1886,210,1851,210C1817.1,210,1783,210,1749,210C1714.3,210,1680,210,1646,210C1611.4,210,1577,210,1543,210C1508.6,210,1474,210,1440,210C1405.7,210,1371,210,1337,210C1302.9,210,1269,210,1234,210C1200,210,1166,210,1131,210C1097.1,210,1063,210,1029,210C994.3,210,960,210,926,210C891.4,210,857,210,823,210C788.6,210,754,210,720,210C685.7,210,651,210,617,210C582.9,210,549,210,514,210C480,210,446,210,411,210C377.1,210,343,210,309,210C274.3,210,240,210,206,210C171.4,210,137,210,103,210C68.6,210,34,210,17,210L0,210Z"></path></svg>
                 </div>
-                <div class="contact-us-content d-flex flex-column align-items-center">
-                    <h2 class="text-center font-bebas-neue-400">
-                        <span class="our-team-title">Contato</span>
-                    </h2>
-                    <div class="contact-us-box">
-                        <div class="contact-us-box-content">
-                            <div class="contact-us-input-name">
-                                <label for="">Nome</label>
-                                <input type="text" placeholder="Digite seu nome" class="form-control">
-                            </div>
-                            <div class="contact-us-input-email">
-                                <label for="">E-mail</label>
-                                <input type="text" placeholder="Digite seu e-mail" class="form-control">
-                            </div>
-                            <div class="contact-us-input-desc">
-                                <label for="">Descrição</label>
-                                <textarea name="" id="" placeholder="Digite o motivo do seu contato" class="form-control"></textarea>
-                            </div>
-                            <div class="contact-us-bnt-submit d-flex justify-content-center">
-                                <input type="submit" class="btn btn-primary">
+                <div class="contact-us-background">
+                    <div class="contact-us-content d-flex flex-column align-items-center">
+                        <h2 class="text-center font-bebas-neue-400">
+                            <span class="contact-us-title">Contato</span>
+                        </h2>
+                        <div class="contact-us-box">
+                            <div class="contact-us-box-content">
+                                <div class="contact-us-input-name">
+                                    <label for="">Nome</label>
+                                    <input type="text" placeholder="Digite seu nome" class="form-control">
+                                </div>
+                                <div class="contact-us-input-email">
+                                    <label for="">E-mail</label>
+                                    <input type="text" placeholder="Digite seu e-mail" class="form-control">
+                                </div>
+                                <div class="contact-us-input-desc">
+                                    <label for="">Descrição</label>
+                                    <textarea name="" id="" placeholder="Digite o motivo do seu contato" class="form-control"></textarea>
+                                </div>
+                                <div class="contact-us-bnt-submit d-flex justify-content-center">
+                                    <input type="submit" class="btn btn-primary">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -248,21 +253,27 @@
         </main>
         <footer class="bg-dark-two landing-page_footer">
             <div class="container">
-                <div class="d-flex justify-content-center flex-column align-items-center">
-                    <span>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div>
                         <img class="footer-img" src="images/logo.png" alt="Alex Barbearia Logo">
-                    </span>
-                    <div class="d-flex justify-content-center">
+                    </div>
+                    <div class="d-flex justify-content-center p-5">
                         <span class="nav-social d-flex">
                             <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-facebook"></i></a>
                             <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-envelope"></i></a>
                             <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-whatsapp"></i></a>
                         </span>
                     </div>
-                    <div>
-                        Todos os direitos reservados @lucasact4
+                    <div class="text-center p-2">
+                        <h5>Localização</h5>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15803.712840499818!2d-34.89493741475828!3d-8.006340518555337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab198d4ae5eb9f%3A0x871150158bd34c0f!2sAlex%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1723347943635!5m2!1spt-BR!2sbr" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="footer-rights w-100 text-center mt-2 p-1">
+                Todos os direitos reservados @lucasact4
             </div>
         </footer>
     </div>
