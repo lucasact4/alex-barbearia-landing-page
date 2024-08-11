@@ -1,0 +1,54 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.landing-page_width-limit {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.landing-page_general-shadow {
+  box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-social a {
+  display: inline-block;
+  background-color: #FFE200;
+  color: black;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: transform 200ms ease;
+  width: 30px;
+  height: 30px;
+}
+.nav-social a:hover {
+  transform: scale(1.1);
+}
+
+.bg-dark-two {
+  background-color: #181818;
+}
+
+/* Fonts */
+.font-montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-bebas-neue-400 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-varela-round-bold {
+  font-family: "Varela Round", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=general-styles.css.map */

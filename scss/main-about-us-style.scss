@@ -1,0 +1,52 @@
+/* Main About Us */
+.landing-page_main {
+    .landing-page_main-about-us {
+        .landing-page_main-about-us-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 64px;
+            padding-bottom: 64px;
+            .landing-page_main-about-us-img {
+                background-image: url(../images/barber-img-main-about-us.jpg);
+                background-size: cover;
+                position: relative;
+                z-index: 2;
+                width: 400px;
+                height: 250px;
+                border-radius: 2px;
+                top: 30px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            }
+            .landing-page_main-about-us-title {
+                position: relative;
+                font-size: 48px;
+                left: -50px;
+                top: -25px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    left: 0px;
+                    bottom: 5px;
+                    height: 3px;
+                    background-color: #CBA009;
+                }
+            }
+            .landing-page_main-about-us-text {
+                position: relative;
+                z-index: 1;
+                width: 800px;
+                height: 300px;
+                border-radius: 2px;
+                background-color: #FFE200;
+                margin-left: -50px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+                p {
+                    padding: 10px 10px 10px 100px;
+                    color: black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+/* Header & Nav Styles */
+.landing-page_header-background {
+    background-image: url(../images/background-barber-example.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    .landing-page_header-shadow {
+        background-color: rgba(0, 0, 0, 0.7);
+        .landing-page_header-nav {
+            height: 100px;
+            .landing-page_header-nav-img {
+                height: 100px;
+                filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+            }
+            .landing-page_header-nav-menu {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 19px;
+                    padding: 2px 17px;
+                    text-shadow: 1px 1px 5px #000000;
+                    position: relative;
+                    transition: color 0.3s ease;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        bottom: -5px;
+                        width: 0;
+                        height: 1px;
+                        background-color: #CBA009;
+                        transition: width 0.3s ease, left 0.3s ease;
+                    }
+                    &:hover {
+                        color: #CBA009;
+                        &::after {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

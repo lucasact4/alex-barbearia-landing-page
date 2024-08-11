@@ -1,0 +1,74 @@
+/* Header & Main Styles */
+.header-main .landing-page_header-main-title {
+  margin-top: 64px;
+}
+.header-main .landing-page_header-main-title .landing-page_header-main-title-one {
+  font-size: 55px;
+  margin-bottom: -30px;
+}
+.header-main .landing-page_header-main-title .landing-page_header-main-title-two {
+  position: relative;
+  font-size: 110px;
+  padding: 0px 20px;
+}
+.header-main .landing-page_header-main-title .landing-page_header-main-title-two::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
+  height: 4px;
+  background-color: #CBA009;
+}
+.header-main .landing-page_header-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 128px;
+}
+.header-main .landing-page_header-main-content .landing-page_header-main-img {
+  background-image: url(../images/barber-img-header-main.webp);
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  width: 550px;
+  height: 366px;
+  border: 3px solid #CBA009;
+  border-radius: 5px;
+  margin-right: -50px;
+}
+.header-main .landing-page_header-main-content .landing-page_header-main-info {
+  position: relative;
+  z-index: 1;
+  width: 550px;
+  height: 366px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  margin-bottom: -100px;
+  margin-left: -50px;
+}
+.header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content {
+  padding: 20px;
+  width: 450px;
+}
+.header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content h5 {
+  font-size: 35px;
+}
+.header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content a {
+  background-color: #FFE200;
+  border: 2px solid #FFE200;
+  font-weight: bold;
+}
+.header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content a:hover {
+  border: 2px solid #FFE200;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content a .bi::before {
+  vertical-align: top;
+  margin-top: 4px;
+}
+
+/*# sourceMappingURL=header-main-style.css.map */

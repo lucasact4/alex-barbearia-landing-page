@@ -1,0 +1,46 @@
+/* Main Contact Us */
+.landing-page_main-contact-us {
+    .contact-us-svg-separator {
+
+    }
+    .contact-us-content {
+        background-color: #FEAD0F;
+        .contact-us-title {
+
+        }
+        .contact-us-box {
+            width: 350px;
+            padding: 20px;
+            background-color: #181818;
+            border-radius: 10px;
+            margin: 20px 0;
+            .contact-us-box-content {
+                .form-control {
+                    margin-bottom: 10px;
+                    background-color: transparent;
+                    &::placeholder {
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                }
+                .contact-us-input-name {
+
+                }
+                .contact-us-input-email {
+
+                }
+                .contact-us-input-desc {
+
+                }
+                .contact-us-bnt-submit {
+                    input {
+                        width: 100%;
+                        margin: 10px 0;
+                        background-color: #FFFFFF;
+                        color: #181818;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

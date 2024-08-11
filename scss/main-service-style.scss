@@ -1,0 +1,77 @@
+/* Main Service Schedule */
+.landing-page_main-service_schedule {
+    background-image: url(../images/background-second-barber-example.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    .landing-page_main-service_schedule_shadow {
+        background-color: rgba(0, 0, 0, 0.85);
+        .service_schedule-content {
+            padding: 5rem 0 7rem 0;
+            .landing-page_main-service-schedule-title {
+                position: relative;
+                padding: 0px 20px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 80%;
+                    left: 10%;
+                    right: 10%;
+                    bottom: 2px;
+                    height: 3px;
+                    background-color: #CBA009;
+                }
+            }
+            .landing-page_main-service {
+                padding: 0 3rem;
+                .service-img {
+                    width: 50px;
+                    height: 50px;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    i {
+                        font-size: 40px;
+                        &::before {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                img {
+                    width: 40px;
+                }
+                .service {
+                    background-color: rgba(0, 0, 0, 0.3);
+                    border: 2px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 5px;
+                    margin: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        color: #CBA009;
+                        font-family: "Bebas Neue", sans-serif;
+                        font-size: 22px;
+                    }
+                }
+            }
+            .landing-page_main-schedule {
+                padding: 0 0rem;
+                .schedule {
+                    background-color: #FFFFFF;
+                    width: 400px;
+                    height: 500px;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
