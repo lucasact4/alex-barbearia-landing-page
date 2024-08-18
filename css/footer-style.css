@@ -9,5 +9,9 @@
   background-color: #FEAD0F;
   font-size: 18px;
 }
+.landing-page_footer .landing-page_footer-loc iframe {
+  border: 5px solid #CBA009 !important;
+  border-radius: 3px;
+}
 
 /*# sourceMappingURL=footer-style.css.map */
