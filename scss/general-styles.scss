@@ -79,3 +79,32 @@
         left: 200px;
     }
 }
+
+
+/* Custom Tooltip */
+.custom-tooltip {
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #343a40 transparent transparent transparent;
+      }
+    .tooltip-inner {
+        background-color: #343a40;
+        color: #fff;
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 4px;
+    }
+    .tooltip-arrow {
+        color: #343a40;
+    }
+    &.show {
+        opacity: 1;
+        transition: opacity 0s ease-in-out;
+    }
+}
