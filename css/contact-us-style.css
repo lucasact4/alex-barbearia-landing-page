@@ -3,6 +3,7 @@
   position: relative;
 }
 .landing-page_main-contact-us .contact-us-svg-separator::after {
+  z-index: 55;
   content: "";
   position: absolute;
   width: 100%;
@@ -20,6 +21,7 @@
   align-items: center;
 }
 .landing-page_main-contact-us .contact-us-background .contact-us-content {
+  margin-top: -2rem;
   background-color: rgba(254, 174, 15, 0.92);
 }
 .landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-title {
@@ -27,6 +29,7 @@
   color: #181818;
 }
 .landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-title::after {
+  z-index: 999 !important;
   content: "";
   position: absolute;
   width: 90%;
@@ -37,6 +40,7 @@
   background-color: #181818;
 }
 .landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box {
+  z-index: 999 !important;
   width: 350px;
   padding: 20px;
   background-color: #181818;
@@ -44,18 +48,31 @@
   margin: 20px 0;
 }
 .landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .form-control {
+  color: #FFFFFF !important;
   margin-bottom: 10px;
   background-color: transparent;
 }
 .landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .form-control::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .contact-us-bnt-submit input {
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .form-control:focus {
+  outline: none !important;
+}
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content label {
+  color: #CBA009;
+  font-weight: bold;
+}
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .contact-us-input-desc textarea {
+  height: 5rem;
+  max-height: 10rem;
+}
+.landing-page_main-contact-us .contact-us-background .contact-us-content .contact-us-box .contact-us-box-content .contact-us-bnt-submit button {
   width: 100%;
   margin: 10px 0;
   background-color: #FFFFFF;
   color: #181818;
   font-weight: bold;
+  border: none;
 }
 
 /*# sourceMappingURL=contact-us-style.css.map */

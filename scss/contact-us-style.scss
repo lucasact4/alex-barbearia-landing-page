@@ -3,6 +3,7 @@
     .contact-us-svg-separator {
         position: relative;
         &::after {
+            z-index: 55;
             content: '';
             position: absolute;
             width: 100%;
@@ -20,11 +21,13 @@
         justify-content: center;
         align-items: center;
         .contact-us-content {
+            margin-top: -2rem;
             background-color: rgba(254, 174, 15, 0.92);
             .contact-us-title {
                 position: relative;
                 color: #181818;
                 &::after {
+                    z-index: 999 !important;
                     content: '';
                     position: absolute;
                     width: 90%;
@@ -36,6 +39,7 @@
                 }
             }
             .contact-us-box {
+                z-index: 999 !important;
                 width: 350px;
                 padding: 20px;
                 background-color: #181818;
@@ -43,11 +47,19 @@
                 margin: 20px 0;
                 .contact-us-box-content {
                     .form-control {
+                        color: #FFFFFF !important;
                         margin-bottom: 10px;
                         background-color: transparent;
                         &::placeholder {
                             color: rgba(255, 255, 255, 0.7);
                         }
+                        &:focus {
+                            outline: none !important;
+                        }
+                    }
+                    label {
+                        color: #CBA009;
+                        font-weight: bold;
                     }
                     .contact-us-input-name {
     
@@ -56,15 +68,19 @@
     
                     }
                     .contact-us-input-desc {
-    
+                        textarea {
+                            height: 5rem;
+                            max-height: 10rem;
+                        }
                     }
                     .contact-us-bnt-submit {
-                        input {
+                        button {
                             width: 100%;
                             margin: 10px 0;
                             background-color: #FFFFFF;
                             color: #181818;
                             font-weight: bold;
+                            border: none;
                         }
                     }
                 }

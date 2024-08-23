@@ -1,8 +1,14 @@
 /* Footer Styles */
 .landing-page_footer {
     .footer-img {
+        filter: drop-shadow(5px 5px 15px rgb(0, 0, 0));
         width: 150px;
         margin-right: -20px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     .footer-rights {
         color: rgba(24, 24, 24, 0.6);
