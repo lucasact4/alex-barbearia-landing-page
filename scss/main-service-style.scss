@@ -66,11 +66,17 @@
             .landing-page_main-schedule {
                 padding: 0 0rem;
                 .schedule {
-                    background-color: #FFFFFF;
-                    width: 400px;
-                    height: 500px;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    border: 2px solid rgba(255, 255, 255, 0.5);
+                    width: 500px;
+                    height: 100%;
                     border-radius: 10px;
                     margin-top: 20px;
+                    margin-bottom: 8px;
+                    .schedule-content {
+                        width: 100%;
+                        padding: 0.4em;
+                    }
                 }
             }
         }

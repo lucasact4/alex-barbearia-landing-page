@@ -7,12 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/8ec8322f68.js" crossorigin="anonymous"></script>
 </head>
 <body class="text-white bg-dark">
+    <button
+        type="button"
+        class="btn btn-back-to-top-style btn-floating btn-lg"
+        id="btn-back-to-top"
+    >
+    <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <div class="landing-page_width-limit landing-page_general-shadow">
         <header class="landing-page_header-background" id="home">
             <div class="landing-page_header-shadow">
@@ -31,9 +38,9 @@
                             <a href="#contact">Contato</a>
                         </span>
                         <span class="nav-social d-flex">
-                            <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-facebook"></i></a>
-                            <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-whatsapp"></i></a>
-                            <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-instagram"></i></a>
+                            <a class="d-flex justify-content-center m-1 rounded" href="" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a class="d-flex justify-content-center m-1 rounded" href="https://api.whatsapp.com/send?phone=81983571970" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                            <a class="d-flex justify-content-center m-1 rounded" href="https://www.instagram.com/4lex_barbearia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="bi bi-instagram"></i></a>
                         </span>
                     </nav>
                     <main class="header-main">
@@ -52,7 +59,7 @@
                                 <div class="landing-page_header-main-info-content text-end">
                                     <h5 class="font-varela-round-400">ALEX BARBER CORTES<br>MASCULINOS</h5>
                                     <p>Na Alex Barber, cortes de cabelo masculinos de qualidade em um ambiente amigável. Venha renovar seu visual conosco!</p>
-                                    <a class="btn" href=""><i class="bi bi-calendar-week"></i> AGENDAR ATENDIMENTO</a>
+                                    <a class="btn btn-primary" href="https://sites.appbarber.com.br/alexbarbearia-o4nw" target="_blank"><i class="bi bi-calendar-week"></i> AGENDAR ATENDIMENTO</a>
                                 </div>
                             </div>
                         </div>
@@ -79,24 +86,24 @@
                 <div class="landing-page_main-service_schedule_shadow">
                     <div class="container">
                         <div class="row service_schedule-content">
-                            <div class="col landing-page_main-service">
+                            <div class="col landing-page_main-service d-flex flex-column">
                                 <h2 class="text-center font-bebas-neue-400">
                                     <span class="landing-page_main-service-schedule-title">Serviços</span>
                                 </h2>
                                 <div class="row">
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: R$ 25">
                                         <div class="service-img">
                                             <i class="bi bi-scissors"></i>
                                         </div>
                                         <p>Corte</p>
                                     </div>
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: R$ 15">
                                         <div class="service-img">
                                             <img src="images/beard.png" alt="">
                                         </div>
                                         <p>Barba</p>
                                     </div>
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: R$ 15">
                                         <div class="service-img">
                                             <img src="images/barbotherapy.png" alt="">
                                         </div>
@@ -104,19 +111,20 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: R$ 40">
                                         <div class="service-img">
-                                            <img src="images/hair-wash-sink.png" alt="">
+                                            <img src="images/lights.png" alt="">
                                         </div>
-                                        <p>Lavagem</p>
+                                        <p>Luzes</p>
                                     </div>
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: R$ Consultar">
                                         <div class="service-img">
                                             <img src="images/male.png" alt="">
                                         </div>
-                                        <p>Hidratação</p>
+                                        <p>Platinado</p>
                                     </div>
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip"
+                                    data-bs-html="true" title="Corte + Pigmentação<br>Valor: R$ 35">
                                         <div class="service-img">
                                             <img src="images/pigmentation.png" alt="">
                                         </div>
@@ -124,32 +132,111 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip"
+                                    data-bs-html="true" title="Lavagem + Hidratação<br>Valor: R$ 15">
                                         <div class="service-img">
-                                            <img src="images/lights.png" alt="">
+                                            <img src="images/hair-wash-sink.png" alt="">
                                         </div>
-                                        <p>Luzes</p>
+                                        <p>Lavagem</p>
                                     </div>
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: R$ 25">
                                         <div class="service-img">
                                             <img src="images/nail-scissors.png" alt="">
                                         </div>
                                         <p>Manicure</p>
                                     </div>
-                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: 00R$">
+                                    <div class="col service glass-shine-effect" data-bs-toggle="tooltip" title="Valor: R$ 25">
                                         <div class="service-img">
                                             <img src="images/nail-clipper.png" alt="">
                                         </div>
                                         <p>Pedicure</p>
                                     </div>
                                 </div>
+                                <div class="btn btn-primary row m-2">Todos os Serviços</div>
                             </div>
                             <div class="col landing-page_main-schedule d-flex align-items-center flex-column">
                                 <h2 class="text-center font-bebas-neue-400">
-                                    <span class="landing-page_main-service-schedule-title">Agende um Horário</span>
+                                    <span class="landing-page_main-service-schedule-title">Agende um Serviço</span>
                                 </h2>
-                                <div class="schedule">
-                                    
+                                <div class="schedule d-flex justify-content-center align-items-center">
+                                    <div class="schedule-content">
+                                        <table class="table table-striped table-dark table-sm table-hover m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Serviço</th>
+                                                    <th scope="col">Preço</th>
+                                                    <th scope="col">Tempo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Barba</th>
+                                                    <td>R$ 15,00</td>
+                                                    <td>15 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Barboterapia</th>
+                                                    <td>R$ 15,00</td>
+                                                    <td>15 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Cabelo e Barba</th>
+                                                    <td>R$ 35,00</td>
+                                                    <td>60 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Corte</th>
+                                                    <td>R$ 25,00</td>
+                                                    <td>45 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Corte + Lavagem + Hidratação</th>
+                                                    <td>R$ 45,00</td>
+                                                    <td>45 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Corte + Pigmentação</th>
+                                                    <td>R$ 35,00</td>
+                                                    <td>45 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Corte social</th>
+                                                    <td>R$ 25,00</td>
+                                                    <td>45 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Lavagem + Hidratação</th>
+                                                    <td>R$ 15,00</td>
+                                                    <td>30 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Luzes</th>
+                                                    <td>R$ 40,00</td>
+                                                    <td>75 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Manicure e Pedicure</th>
+                                                    <td>R$ 25,00</td>
+                                                    <td>30 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Maquina + Desenho</th>
+                                                    <td>R$ 15,00</td>
+                                                    <td>15 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Platinado</th>
+                                                    <td>R$ Consultar</td>
+                                                    <td>120 min</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Sobrancelha</th>
+                                                    <td>R$ 5,00</td>
+                                                    <td>15 min</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +352,8 @@
                         <span class="nav-social d-flex">
                             <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-facebook"></i></a>
                             <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-envelope"></i></a>
-                            <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-whatsapp"></i></a>
+                            <a class="d-flex justify-content-center m-1 rounded" href="https://api.whatsapp.com/send?phone=81983571970" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                            <a class="d-flex justify-content-center m-1 rounded" href="https://www.instagram.com/4lex_barbearia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="bi bi-instagram"></i></a>
                         </span>
                     </div>
                     <div class="text-center p-2">
@@ -281,5 +369,6 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

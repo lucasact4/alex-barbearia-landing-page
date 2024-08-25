@@ -67,19 +67,6 @@
                 h5 {
                     font-size: 35px;
                 }
-                a {
-                    background-color: #FFE200;
-                    border: 2px solid #FFE200;
-                    font-weight: bold;
-                    &:hover {
-                        border: 2px solid #FFE200;
-                        background-color: rgba(0, 0, 0, 0.01);
-                    }
-                    .bi::before {
-                        vertical-align: top;
-                        margin-top: 4px;
-                    }
-                }
             }
         }
     }

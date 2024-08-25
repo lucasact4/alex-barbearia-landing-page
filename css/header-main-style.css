@@ -68,18 +68,5 @@
 .header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content h5 {
   font-size: 35px;
 }
-.header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content a {
-  background-color: #FFE200;
-  border: 2px solid #FFE200;
-  font-weight: bold;
-}
-.header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content a:hover {
-  border: 2px solid #FFE200;
-  background-color: rgba(0, 0, 0, 0.01);
-}
-.header-main .landing-page_header-main-content .landing-page_header-main-info .landing-page_header-main-info-content a .bi::before {
-  vertical-align: top;
-  margin-top: 4px;
-}
 
 /*# sourceMappingURL=header-main-style.css.map */
