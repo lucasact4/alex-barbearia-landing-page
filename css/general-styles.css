@@ -71,6 +71,27 @@
   border: 3px solid #FEAC10;
 }
 
+.schedule-content {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.schedule-content .service-content {
+  padding: 0.55em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.schedule-content .service-content.active {
+  transform: translateY(0);
+}
+.schedule-content .service-content:not(.active) {
+  transform: translateY(100%);
+}
+
 /* Fonts */
 .font-montserrat-700 {
   font-family: "Montserrat", sans-serif;
