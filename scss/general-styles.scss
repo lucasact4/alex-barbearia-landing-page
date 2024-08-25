@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .landing-page_width-limit {
     margin: 0 auto;
     max-width: 1920px;
@@ -70,30 +74,6 @@
     &:hover {
         background-color: #343a40;
         border: 3px solid #FEAC10;
-    }
-}
-
-.schedule-content {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-  
-    .service-content {
-        padding: 0.55em;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.5s ease-in-out;
-    
-        &.active {
-            transform: translateY(0);
-        }
-    
-        &:not(.active) {
-            transform: translateY(100%);
-        }
     }
 }
 
