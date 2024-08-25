@@ -9,11 +9,26 @@
 .landing-page_footer .footer-img:hover {
   transform: scale(1.1);
 }
-.landing-page_footer .footer-rights {
+.landing-page_footer .opening-hours h5 {
+  margin-top: 5px;
+}
+.landing-page_footer .opening-hours hr {
+  margin: 0.3rem auto;
+}
+.landing-page_footer .opening-hours p {
+  margin: 0;
+}
+.landing-page_footer .opening-hours span {
+  margin: 0;
+}
+.landing-page_footer a {
+  text-decoration: none;
+}
+.landing-page_footer a .footer-rights {
   color: rgba(24, 24, 24, 0.6);
   font-weight: bold;
   background-color: #FEAD0F;
-  font-size: 18px;
+  font-size: 16px;
 }
 .landing-page_footer .landing-page_footer-loc iframe {
   border: 5px solid #CBA009 !important;
