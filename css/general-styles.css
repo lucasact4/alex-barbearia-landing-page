@@ -10,6 +10,10 @@
   max-width: 1920px;
 }
 
+.title-primary {
+  color: #FEAC10 !important;
+}
+
 .btn-primary {
   background-color: #FFE200 !important;
   border: 2px solid #FFE200 !important;
