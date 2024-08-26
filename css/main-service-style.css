@@ -96,14 +96,20 @@
   height: 100%;
   transition: transform 0.5s ease-in-out;
 }
-.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule .schedule-content .service-content .info-service {
-  background-color: rgba(255, 255, 255, 0.4);
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule .schedule-content .service-content .info-service-img {
+  margin-bottom: 5px;
 }
-.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule .schedule-content .service-content .info-service p {
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule .schedule-content .service-content .info-service-img p {
+  margin-top: 8px;
+  margin-bottom: 0;
   color: #181818;
 }
-.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule .schedule-content .service-content .info-service img {
-  width: 200px;
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule .schedule-content .service-content .info-service-img img {
+  width: 250px;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule .schedule-content .service-content .info-service-all p {
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule .schedule .schedule-content .service-content.active {
   transform: translateY(0);

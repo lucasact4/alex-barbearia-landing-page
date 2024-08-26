@@ -93,13 +93,21 @@
                             h5 {
 
                             }
-                            .info-service {
-                                background-color: rgba(255, 255, 255, 0.4);
+                            .info-service-img {
                                 p {
+                                    margin-top: 8px;
+                                    margin-bottom: 0;
                                     color: #181818;
                                 }
                                 img {
-                                    width: 200px;
+                                    width: 250px;
+                                }
+                                margin-bottom: 5px;
+                            }
+                            .info-service-all {
+                                p {
+                                    margin-top: 8px;
+                                    margin-bottom: 0;
                                 }
                             }
                         
