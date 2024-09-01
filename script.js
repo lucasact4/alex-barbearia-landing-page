@@ -119,8 +119,9 @@ function loadCarousel() {
   fetch('partials/carousel.html')
       .then(response => response.text())
       .then(data => {
-          document.querySelectorAll('.carousel-container').forEach(container => {
-              container.innerHTML = data;
+          document.querySelectorAll('.carousel-container').forEach((container, index) => {
+              const uniqueId = index + 1;
+              container.innerHTML = data.replace(/{{id}}/g, uniqueId);
           });
       })
       .catch(error => console.error('Error loading carousel:', error));
@@ -131,6 +132,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // =====================================
 
+
+// CAROUSEL MODAL ============================
 function updateModalTitle() {
   const activeContent = document.querySelector('.service-content.active');
   
@@ -142,3 +145,4 @@ function updateModalTitle() {
 }
 
 document.getElementById('carouselModal').addEventListener('show.bs.modal', updateModalTitle);
+// =====================================
