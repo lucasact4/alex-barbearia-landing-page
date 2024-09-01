@@ -1,13 +1,17 @@
+// TOOLTIP ============================
 document.addEventListener('DOMContentLoaded', function () {
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl, {
-            delay: { "show": 0, "hide": 100 }, // Mostra instantaneamente
+            delay: { "show": 0, "hide": 100 },
             template: '<div class="tooltip custom-tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
         });
     });
 });
+// =====================================
 
+
+// BACK TO TOP ============================
 let mybutton = document.getElementById("btn-back-to-top");
 
 window.onscroll = function () {
@@ -30,8 +34,10 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// =====================================
 
 
+// SERVICES CHANGE ============================
 document.getElementById('service-1').addEventListener('click', function() {
   showServiceContent('content-1');
 });
@@ -71,7 +77,68 @@ function showServiceContent(contentId) {
 
   document.getElementById(contentId).classList.add('active');
 }
+// =====================================
+
+
+// SERVICES RENDERING ============================
+function loadContent() {
+  const services = [
+      { id: 1, file: 'partials/services/corte.html' },
+      { id: 2, file: 'partials/services/barba.html' },
+      { id: 3, file: 'partials/services/barboterapia.html' },
+      { id: 4, file: 'partials/services/luzes.html' },
+      { id: 5, file: 'partials/services/platinado.html' },
+      { id: 6, file: 'partials/services/pigmentacao.html' },
+      { id: 7, file: 'partials/services/lavagem.html' },
+      { id: 8, file: 'partials/services/manicure.html' },
+      { id: 9, file: 'partials/services/pedicure.html' },
+      { id: 10, file: 'partials/services/all.html' },
+  ];
+
+  const container = document.getElementById('services-container');
+
+  services.forEach(service => {
+    fetch(service.file)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(`content-${service.id}`).innerHTML = data;
+        })
+        .catch(error => console.error(`Error loading ${service.file}:`, error));
+  });
+}
 
 document.addEventListener('DOMContentLoaded', function() {
+  loadContent();
   showServiceContent('content-10');
 });
+// =====================================
+
+
+// CAROUSEL RENDERING ============================
+function loadCarousel() {
+  fetch('partials/carousel.html')
+      .then(response => response.text())
+      .then(data => {
+          document.querySelectorAll('.carousel-container').forEach(container => {
+              container.innerHTML = data;
+          });
+      })
+      .catch(error => console.error('Error loading carousel:', error));
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  loadCarousel();
+});
+// =====================================
+
+function updateModalTitle() {
+  const activeContent = document.querySelector('.service-content.active');
+  
+  if (activeContent) {
+      const contentTitle = activeContent.querySelector('h5').textContent;
+      const modalTitle = document.getElementById('carouselModalLabel');
+      modalTitle.textContent = `Imagens do Serviço - ${contentTitle}`;
+  }
+}
+
+document.getElementById('carouselModal').addEventListener('show.bs.modal', updateModalTitle);
