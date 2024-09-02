@@ -63,13 +63,11 @@
   align-items: center;
 }
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service p {
-  transition: transform 0.2s ease-in-out;
   color: #CBA009;
   font-family: "Bebas Neue", sans-serif;
   font-size: 22px;
 }
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service .service-img {
-  transition: transform 0.2s ease-in-out;
   width: 50px;
   height: 50px;
   margin-top: 10px;
@@ -86,9 +84,6 @@
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service .service-img img {
   width: 40px;
   height: 40px;
-}
-.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service:hover .service-img, .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service:hover p {
-  transform: scale(1.05);
 }
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-schedule {
   padding: 0 0rem;
