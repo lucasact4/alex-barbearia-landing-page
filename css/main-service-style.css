@@ -29,6 +29,25 @@
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service {
   padding: 0 3rem;
 }
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-card {
+  margin: 10px 20px;
+  padding: 0;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-card .card-active-outline {
+  margin: 3px auto;
+  bottom: -8px;
+  width: 100px;
+  height: 2px;
+  background-color: #CBA009;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-card:has(.active-this) .card-active-outline {
+  transform: scaleX(1) !important;
+}
+.landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-card:has(.service-10) .card-active-outline {
+  width: 250px;
+}
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service-img {
   width: 50px;
   height: 50px;
@@ -51,11 +70,11 @@
   width: 40px;
 }
 .landing-page_main-service_schedule .landing-page_main-service_schedule_shadow .service_schedule-content .landing-page_main-service .service {
+  position: relative;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
-  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

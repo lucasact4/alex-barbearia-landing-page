@@ -146,3 +146,25 @@ function updateModalTitle() {
 
 document.getElementById('carouselModal').addEventListener('show.bs.modal', updateModalTitle);
 // =====================================
+
+function showServiceContent(contentId) {
+  var contents = document.querySelectorAll('.service-content');
+  contents.forEach(function(content) {
+      content.classList.remove('active');
+  });
+  var activeContent = document.getElementById(contentId);
+  activeContent.classList.add('active');
+  
+  var serviceAll = document.querySelector('.service-10');
+  serviceAll.classList.remove('active-this');
+  var services = document.querySelectorAll('.landing-page_main-service .service');
+  services.forEach(function(service) {
+      service.classList.remove('active-this');
+  });
+  
+  var serviceId = 'service-' + contentId.split('-')[1];
+  var activeService = document.getElementById(serviceId);
+  if (activeService) {
+      activeService.classList.add('active-this');
+  }
+}
