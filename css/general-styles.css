@@ -123,25 +123,21 @@ a {
 }
 
 /* Custom Tooltip */
+.custom-tooltip {
+  --bs-tooltip-bg: #343a40 !important;
+}
 .custom-tooltip::after {
   content: " ";
   position: absolute;
   top: 90%;
   left: 50%;
   margin-left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: #343a40 transparent transparent transparent;
 }
 .custom-tooltip .tooltip-inner {
-  background-color: #343a40;
   color: #fff;
   font-size: 14px;
   padding: 8px 12px;
   border-radius: 4px;
-}
-.custom-tooltip .tooltip-arrow {
-  color: #343a40;
 }
 .custom-tooltip.show {
   opacity: 1;

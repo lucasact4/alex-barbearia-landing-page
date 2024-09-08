@@ -1,16 +1,3 @@
-// TOOLTIP ============================
-document.addEventListener('DOMContentLoaded', function () {
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl, {
-            delay: { "show": 0, "hide": 100 },
-            template: '<div class="tooltip custom-tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
-        });
-    });
-});
-// =====================================
-
-
 // BACK TO TOP ============================
 let mybutton = document.getElementById("btn-back-to-top");
 
@@ -147,6 +134,8 @@ function updateModalTitle() {
 document.getElementById('carouselModal').addEventListener('show.bs.modal', updateModalTitle);
 // =====================================
 
+
+// ADD ACTIVE CSS SERVICE ============================
 function showServiceContent(contentId) {
   var contents = document.querySelectorAll('.service-content');
   contents.forEach(function(content) {
@@ -168,3 +157,16 @@ function showServiceContent(contentId) {
       activeService.classList.add('active-this');
   }
 }
+// =====================================
+
+// TOOLTIP ============================
+document.addEventListener('DOMContentLoaded', function () {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl, {
+          delay: { "show": 0, "hide": 100 },
+          template: '<div class="tooltip custom-tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+      });
+  });
+});
+// =====================================
