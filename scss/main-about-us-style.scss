@@ -8,6 +8,7 @@
             padding-top: 64px;
             padding-bottom: 64px;
             .landing-page_main-about-us-img {
+                transition: transform 0.4s ease-in-out;
                 background-image: url(../images/barber-img-main-about-us.jpg);
                 background-size: cover;
                 position: relative;
@@ -17,6 +18,9 @@
                 border-radius: 2px;
                 top: 30px;
                 box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            }
+            .landing-page_main-about-us-info {
+                transition: transform 0.4s ease-in-out;
             }
             .landing-page_main-about-us-title {
                 position: relative;

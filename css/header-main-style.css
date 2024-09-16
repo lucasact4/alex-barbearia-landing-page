@@ -28,6 +28,7 @@
   padding-bottom: 128px;
 }
 .header-main .landing-page_header-main-content .landing-page_header-main-img-frame {
+  transition: transform 0.4s ease-in-out;
   z-index: 2;
   width: 556px;
   height: 372px;
@@ -50,6 +51,7 @@
   box-shadow: inset 0px 0px 100px 180px rgba(0, 0, 0, 0.1);
 }
 .header-main .landing-page_header-main-content .landing-page_header-main-info {
+  transition: transform 0.4s ease-in-out;
   position: relative;
   z-index: 1;
   width: 550px;

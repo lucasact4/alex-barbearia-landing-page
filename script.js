@@ -170,3 +170,67 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 // =====================================
+
+
+// ANIMAÇÃO IN HEADER MAIN ============================
+document.addEventListener('DOMContentLoaded', () => {
+  const imgFrame = document.querySelector('.landing-page_header-main-img-frame');
+  const infoFrame = document.querySelector('.landing-page_header-main-info');
+  const content = document.querySelector('.landing-page_header-main-content');
+
+  const animateDivs = () => {
+      const rect = content.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const windowCenterY = windowHeight / 2;
+
+      const contentCenterY = rect.top + rect.height / 2;
+      const distanceFromCenter = Math.abs(windowCenterY - contentCenterY);
+
+      const maxDistance = 1500; 
+      const normalizedDistance = Math.min(distanceFromCenter / maxDistance, 1);
+
+      const maxTranslateX = 50;
+      const translateX = maxTranslateX * normalizedDistance;
+
+      imgFrame.style.transform = `translateX(${-translateX}%)`;
+      infoFrame.style.transform = `translateX(${translateX}%)`;
+  };
+
+  window.addEventListener('scroll', animateDivs);
+  window.addEventListener('resize', animateDivs);
+  
+  animateDivs();
+});
+// =====================================
+
+
+// ANIMAÇÃO IN HEADER MAIN ============================
+document.addEventListener('DOMContentLoaded', () => {
+  const imgFrame = document.querySelector('.landing-page_main-about-us-img');
+  const infoFrame = document.querySelector('.landing-page_main-about-us-info');
+  const content = document.querySelector('.landing-page_main-about-us-content');
+
+  const animateDivs = () => {
+      const rect = content.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const windowCenterY = windowHeight / 2;
+
+      const contentCenterY = rect.top + rect.height / 2;
+      const distanceFromCenter = Math.abs(windowCenterY - contentCenterY);
+
+      const maxDistance = 1500; 
+      const normalizedDistance = Math.min(distanceFromCenter / maxDistance, 1);
+
+      const maxTranslateX = 50;
+      const translateX = maxTranslateX * normalizedDistance;
+
+      imgFrame.style.transform = `translateX(${-translateX}%)`;
+      infoFrame.style.transform = `translateX(${translateX}%)`;
+  };
+
+  window.addEventListener('scroll', animateDivs);
+  window.addEventListener('resize', animateDivs);
+  
+  animateDivs();
+});
+// =====================================
