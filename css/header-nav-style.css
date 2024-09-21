@@ -8,6 +8,7 @@
 }
 .landing-page_header-background .landing-page_header-shadow {
   background-color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
 }
 .landing-page_header-background .landing-page_header-shadow .landing-page_header-nav {
   height: 100px;
