@@ -234,3 +234,15 @@ document.addEventListener('DOMContentLoaded', () => {
   animateDivs();
 });
 // =====================================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.getElementById("menu-toggle");
+  const menuLinks = document.querySelectorAll(".landing-page_header-nav-menu a");
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      checkbox.checked = false;
+      document.body.classList.remove("menu-open"); // Remove a classe para restaurar o scroll
+    });
+  });
+});

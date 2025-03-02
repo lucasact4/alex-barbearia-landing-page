@@ -30,18 +30,33 @@
                                 <img class="landing-page_header-nav-img" src="images/logo.png" alt="Alex Barbearia Logo">
                             </a>
                         </span>
-                        <span class="font-montserrat-700 landing-page_header-nav-menu">
-                            <a href="#home">Home</a>
-                            <a href="#about-us">Sobre Nós</a>
-                            <a href="#service">Serviços</a>
-                            <a href="#our-team">Equipe</a>
-                            <a href="#contact">Contato</a>
-                        </span>
-                        <span class="nav-social d-flex">
-                            <a class="d-flex justify-content-center m-1 rounded" href="" target="_blank"><i class="bi bi-facebook"></i></a>
-                            <a class="d-flex justify-content-center m-1 rounded" href="https://api.whatsapp.com/send?phone=81983571970" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                            <a class="d-flex justify-content-center m-1 rounded" href="https://www.instagram.com/4lex_barbearia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="bi bi-instagram"></i></a>
-                        </span>
+                        <div class="collapse navbar-collapse d-flex justify-content-end">
+                          <div class="w-100">
+                            <label class="d-flex justify-content-around align-items-center">
+                              <input
+                                type="checkbox"
+                                id="menu-toggle"
+                                class="landing-page_checkbox"
+                              >
+                              <span class="menu"> 
+                                <span class="hamburger">
+                                </span>
+                              </span>
+                              <span class="navbar-nav font-montserrat-700 landing-page_header-nav-menu w-100 d-flex justify-content-around flex-row px-5">
+                                <a href="#home">Home</a>
+                                <a href="#about-us">Sobre Nós</a>
+                                <a href="#service">Serviços</a>
+                                <a href="#our-team">Equipe</a>
+                                <a href="#contact">Contato</a>
+                              </span>
+                              <span class="navbar-nav d-flex justify-content-around flex-row nav-social">
+                                  <a class="d-flex justify-content-center m-1 rounded" href="" target="_blank"><i class="bi bi-facebook"></i></a>
+                                  <a class="d-flex justify-content-center m-1 rounded" href="https://api.whatsapp.com/send?phone=81983571970" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                                  <a class="d-flex justify-content-center m-1 rounded" href="https://www.instagram.com/4lex_barbearia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="bi bi-instagram"></i></a>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
                     </nav>
                     <main class="header-main">
                         <div class="font-bebas-neue-400 text-center landing-page_header-main-title">
@@ -318,11 +333,11 @@
         </main>
         <footer class="bg-dark-two landing-page_footer">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
+                <div class="d-flex justify-content-between align-items-center row">
+                    <div class="col">
                         <img class="footer-img" src="images/logo.png" alt="Alex Barbearia Logo">
                     </div>
-                    <div class="d-flex justify-content-center align-items-center text-center flex-column p-5">
+                    <div class="d-flex justify-content-center align-items-center text-center flex-column p-5 col">
                         <span class="nav-social d-flex">
                             <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-facebook"></i></a>
                             <a class="d-flex justify-content-center m-1 rounded" href=""><i class="bi bi-envelope"></i></a>
@@ -339,7 +354,7 @@
                             <span>8:00h ás 19:00h</span>
                         </span>
                     </div>
-                    <div class="text-center p-2">
+                    <div class="text-center p-2 col">
                         <h5>Localização</h5>
                         <div class="landing-page_footer-loc">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15803.712840499818!2d-34.89493741475828!3d-8.006340518555337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab198d4ae5eb9f%3A0x871150158bd34c0f!2sAlex%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1723347943635!5m2!1spt-BR!2sbr" width="600" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
