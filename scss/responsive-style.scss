@@ -20,7 +20,7 @@ html:has(#menu-toggle:checked) {
             z-index: 100;
             width: 150px;
             height: 150px;
-            background: rgba(24, 24, 24, 0.9);
+            background: rgba(24, 24, 24, 0.95);
             border-radius: 50% 50% 50% 50%;
             -webkit-transition: .5s ease-in-out;
             transition: .5s ease-in-out;
@@ -59,7 +59,7 @@ html:has(#menu-toggle:checked) {
                     overflow-y: hidden !important;
                 }
                 + .menu {
-                    box-shadow: 0 0 0 100vw rgba(24, 24, 24, 0.7), 0 0 0 200vh rgba(24, 24, 24, 0.7);
+                    box-shadow: 0 0 0 100vw rgba(24, 24, 24, 0.8), 0 0 0 200vh rgba(24, 24, 24, 0.8);
                     border-radius: 0;
 
                     .hamburger {
@@ -104,13 +104,13 @@ html:has(#menu-toggle:checked) {
             transition: .25s 0s ease-in-out;
         }
         a {
-            margin-top: 1em;
+            margin-top: 0.5em;
             display: block;
             text-align: center;
             background-color: #181818;
             border: 1px solid #fff;
             border-radius: 0.25em;
-            padding: 0.5rem 1.5rem !important;
+            padding: 0.3rem 1.5rem !important;
         }
     }
 
