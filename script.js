@@ -196,10 +196,10 @@ document.addEventListener('DOMContentLoaded', () => {
       infoFrame.style.transform = `translateX(${translateX}%)`;
   };
 
-  window.addEventListener('scroll', animateDivs);
-  window.addEventListener('resize', animateDivs);
+  // window.addEventListener('scroll', animateDivs);
+  // window.addEventListener('resize', animateDivs);
   
-  animateDivs();
+  // animateDivs();
 });
 // =====================================
 
@@ -228,10 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
       infoFrame.style.transform = `translateX(${translateX}%)`;
   };
 
-  window.addEventListener('scroll', animateDivs);
-  window.addEventListener('resize', animateDivs);
+  // window.addEventListener('scroll', animateDivs);
+  // window.addEventListener('resize', animateDivs);
   
-  animateDivs();
+  // animateDivs();
 });
 // =====================================
 

@@ -30,7 +30,15 @@
   background-color: #FEAD0F;
   font-size: 16px;
 }
+.landing-page_footer .landing-page_footer-loc {
+  display: flex;
+  justify-content: center;
+}
 .landing-page_footer .landing-page_footer-loc iframe {
+  min-width: 300px;
+  width: 600px;
+  max-width: 600px;
+  height: 200px;
   border: 5px solid #CBA009 !important;
   border-radius: 3px;
 }

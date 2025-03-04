@@ -15,8 +15,8 @@
   background-size: cover;
   position: relative;
   z-index: 2;
-  width: 400px;
-  height: 250px;
+  min-width: 400px;
+  min-height: 250px;
   border-radius: 2px;
   top: 30px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);

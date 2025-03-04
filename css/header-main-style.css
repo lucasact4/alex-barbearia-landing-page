@@ -30,8 +30,8 @@
 .header-main .landing-page_header-main-content .landing-page_header-main-img-frame {
   transition: transform 0.4s ease-in-out;
   z-index: 2;
-  width: 556px;
-  height: 372px;
+  min-width: 556px;
+  min-height: 372px;
   border: 3px solid #CBA009;
   border-radius: 5px;
   margin-right: -50px;
